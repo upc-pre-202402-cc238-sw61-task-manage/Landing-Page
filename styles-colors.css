@@ -1,0 +1,65 @@
+:root{
+    /*Gray Scale*/
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --black: #000;
+
+    /*Other Colors*/
+    --sky-blue: #74b3fb;
+    --light-blue: #0fc4e4;
+    --blue: #3943ff;
+    --marine-blue: #4b78ff;
+    --dark-blue: #27345e;
+    --night-blue: #171625;
+}
+
+.light{
+    --bg: var(--gray0);
+    --primary-gradient: linear-gradient(to right, var(--light-blue), var(--marine-blue), var(--dark-blue), var(--gray6));
+    --bg-dropdown: var(--gray1);
+    --bg-shadow: var(--gray6);
+
+    --text: var(--gray6);
+    --text-inverted: var(--gray0);
+
+    --card: var(--gray0);
+    --border: var(--gray4);
+
+    --button: var(--gray1);
+    --button-hover: var(--gray0);
+    --link-hover: var(--gray0);
+
+    --footer: var(--gray2);
+}
+
+#light::before {
+    background: #ffffff;
+}
+
+
+.dark{
+    --primary-gradient: linear-gradient(to right, var(--light-blue), var(--marine-blue), var(--dark-blue), var(--gray6));
+    --bg: var(--gray6);
+    --bg-dropdown: var(--gray5);
+    --bg-shadow: var(--gray2);
+
+    --text: var(--gray0);
+    --text-inverted: var(--gray6);
+
+    --card: var(--gray5);
+    --border: var(--marine-blue);
+
+    --button: var(--marine-blue);
+    --button-hover: var(--sky-blue);
+    --link-hover: var(--gray4);
+    --footer: var(--gray6);
+}
+
+#dark::before {
+    background: #2a2e35;
+}

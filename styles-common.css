@@ -1,0 +1,193 @@
+@import 'styles-colors.css';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Titles and Subtitles*/
+.title-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+    /*Title*/
+.title-container>h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+    /*Subtitle*/
+.title-container>p {
+    font-size: 35px;
+}
+
+    /*Workflow name*/
+.title-container>.workflow-name {
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+/*Containers*/
+.container {
+    padding: 5rem 0;
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Cards*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 23em;
+    height: 23em;
+    margin-bottom: 4em;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 6px 0 var(--bg-shadow);
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header>h1{
+    font-size: x-large;
+    padding: 0.5em;
+}
+
+.card-icon-fill{
+    width: 1.5em; 
+    height: 1.5em;
+    fill: var(--text);
+    stroke: none;
+    transition: fill 500ms ease-in-out;
+}
+
+.card-icon-stroke{
+    width: 1.5em; 
+    height: 1.5em;
+    fill: none;
+    stroke: var(--text);
+    transition: stroke 500ms ease-in-out;
+}
+
+.card-content {
+    background: var(--card);
+    height: 100%;
+    transition: background 500ms ease-in-out;
+}
+
+.card-content>img {
+    width: 100%;
+    max-height: 50%;
+    background: white;
+}
+
+.card-content-image-only>img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content>p {
+    text-align: justify;
+    margin: 0.6em;
+}
+
+/*Descriptive Cards*/
+.descriptive-card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
+
+.descriptive-card {
+    width: 90%;
+    height: 14rem;
+    margin-bottom: 4em;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 6px 0 var(--bg-shadow);
+}
+
+.descriptive-card-add-on-side{
+    height: 100%;
+    width: 20%;
+    border-right: 0.2em solid var(--border);
+}
+
+.descriptive-card-add-on-side>img{
+    height: 100%;
+    width: 100%;
+}
+
+.descriptive-card-main-side{
+    width: 100%;
+    height: 100%;
+}
+
+.descriptive-card-header{
+    background-image: var(--primary-gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+}
+
+.descriptive-card-header>h1{
+    text-align: center;
+    font-size: x-large;
+    padding: 1em;
+}
+
+.descriptive-card-content {
+    background: var(--card);
+    height: 100%;
+    transition: background 500ms ease-in-out;
+}
+
+.descriptive-card-content>p {
+    text-align: justify;
+    padding: 1.5em;
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        padding: 2rem 0;
+        max-width: 85vw;
+    }
+
+    .descriptive-card-add-on-side{
+        width: 40%;
+    }
+
+    .descriptive-card-header>h1{
+        font-size: medium;
+    }
+    
+    .descriptive-card-add-on-side>img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .descriptive-card {
+        width: 100%;
+        height: 100%;
+        max-height: 30rem;
+    }
+}

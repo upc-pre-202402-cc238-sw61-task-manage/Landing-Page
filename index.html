@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-common.css">
+    <link rel="stylesheet" href="styles-header.css">
+    <link rel="stylesheet" href="styles-home.css">
+    <link rel="stylesheet" href="styles-body.css">
+    <link rel="stylesheet" href="styles-footer.css">
+    <script defer src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <title>Workflow</title>
+    <link rel="icon" href="logos/Workflow_noText.png">
+</head>
+<body class="light">
+    <nav class="navbar background-primary-gradient" id="nav-bar">
+        <h2 class="nav-bar-logo">Task Management</h2>
+        <ul class="sidebar">
+            <li class="sidebar-item" onclick="closeSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" class="sidebar-toggle-button"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </li>
+            <li class="sidebar-item">
+                <a href="#about-us">About Us</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#services">Services</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#contact-us">Contact Us</a>
+            </li>
+            <li class="sidebar-item">
+                <button class="open-app">
+                    <h2>Open App</h2>
+                </button>
+            </li>
+        </ul>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a onClick="openThemeDropdown(event)">Theme</a>
+                <ul class="dropdown" id="theme-dropdown-selector">
+                    <li class="dropdown-item">
+                        <a id="light">Light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark">Dark</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <button class="open-app">
+                    <h2>Open App</h2>
+                </button>
+            </li>
+            <li class="nav-sidebar-toggle" onclick="openSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  class="sidebar-toggle-button"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h2>In this digital era, time management has become one of the most important habilites everyone needs to know</h2>
+        <h4>A thus, we present:</h4>
+        <div class="wave-container">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.00,49.85 C175.73,148.12 290.29,-47.72 507.00,78.24 L507.00,150.00 L0.00,150.00 Z" class="wave"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section class="container" id="about-us">
+        <header class="title-container">
+            <img src="logos/Workflow_noText.png" alt="Workflow Logo" class="logo">
+            <h1 class="workflow-name">Workflow</h1>
+            <p>Revolutionizing the organization</p>
+        </header>
+        <div class="description">
+            <p>Do you want a way to organize all your work in one single place? We present to you our plataform Task Management.
+                Let us share with you two of the most important reasons for you to be part of our community</p>
+        </div>
+        <div class="container-about-us">
+            <img src="background/about-us.jpg" alt="Online Job" class="aboutUs-image">
+            <div class="text-content">
+                <h3>
+                    <span>1</span>
+                    Improved Efficiency and Productivity
+                </h3>
+                <p>Imagine doing or your tasks faster and more efficiently. Our platform simplifies the resources management,
+                    from little tasks from your day to day life to your big projects. With Task Management, you can follow your
+                tasks progress, you can insert events in a calendar and so much more.</p>
+                <h3>
+                    <span>2</span> 
+                    Promotes a Collaborative and Transparent Work Environment
+                </h3>
+                <p>The key to a strong team is clear communication and transparency. Our platform simplifies collaboration
+                    between everyone inside a team, creating a virtual workspace where trust and collaboration flourish.
+                    This not only increases job satisfaction, but also improves the overall performance of your team..</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="services">
+        <header class="title-container">
+            <h1>Our App Funcionality</h1>
+        </header>
+        <div class="card-container">
+            <article class="card">
+                <header class="card-header">
+                    <h1>Use the calendar</h1>
+                    <svg class="card-icon-stroke" viewBox="0 0 24 24">
+                        <path d="M3 10H21M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </header>
+                <div class="card-content-image-only">
+                    <img src="background/TBD.jpg" alt="Calendar Functionality">
+                </div> 
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Create Projects</h1>
+                    <svg class="card-icon-fill" viewBox="0 0 1024 1024">
+                        <path d="M280 752h80c4.4 0 8-3.6 8-8V280c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8v464c0 4.4 3.6 8 8 8zm192-280h80c4.4 0 8-3.6 8-8V280c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8v184c0 4.4 3.6 8 8 8zm192 72h80c4.4 0 8-3.6 8-8V280c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8v256c0 4.4 3.6 8 8 8zm216-432H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"/>
+                    </svg>
+                </header>
+                <div class="card-content-image-only">
+                    <img src="background/TBD.jpg" alt="Project Functionality">
+                </div> 
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Complete Tasks</h1>
+                    <svg class="card-icon-fill" viewBox="0 0 16 16">
+                        <path d="M7.93,8.24,5.26,5.58,4,6.85l3.94,3.94L16,2.7,14.74,1.43,13,3.17,11.2,5Zm3.27,4H2.8V3.8H11L12.75,2H1V14H13V7.13l-1.8,1.8Z"/>
+                    </svg>
+                </header>
+                <div class="card-content-image-only">
+                    <img src="background/TBD.jpg" alt="Task Functionality">
+                </div> 
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Organize your work</h1>
+                    <svg class="card-icon-fill" viewBox="0 0 256 256">
+                        <path d="M220.48535,59.51465l-40-40A11.99992,11.99992,0,0,0,172,16H92A20.0226,20.0226,0,0,0,72,36V56H56A20.0226,20.0226,0,0,0,36,76V216a20.0226,20.0226,0,0,0,20,20H164a20.0226,20.0226,0,0,0,20-20V196h20a20.0226,20.0226,0,0,0,20-20V68A12.002,12.002,0,0,0,220.48535,59.51465ZM160,212H60V80h67.0293L160,112.9707Zm40-40H184V108a12.002,12.002,0,0,0-3.51465-8.48535l-40-40A11.99992,11.99992,0,0,0,132,56H96V40h71.0293L200,72.9707Zm-56-28a12,12,0,0,1-12,12H88a12,12,0,0,1,0-24h44A12,12,0,0,1,144,144Zm0,40a12,12,0,0,1-12,12H88a12,12,0,0,1,0-24h44A12,12,0,0,1,144,184Z"/>
+                    </svg>
+                </header>
+                <div class="card-content-image-only">
+                    <img src="background/TBD.jpg" alt="Organization Functionality">
+                </div> 
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Finish faster</h1>
+                    <svg class="card-icon-fill" viewBox="0 0 1920 1920">
+                        <path d="M211.733 1260.088c16.32 131.947 68.587 258.027 151.254 364.8l-168.64 130.667C88.213 1618.488 21.013 1456.14 0 1286.22Zm1654.155-391.584c18.88 57.813 32.32 117.76 39.787 178.24 4.8 40 7.146 79.147 7.146 119.787 0 40.533-2.346 79.68-7.146 119.466-21.014 170.134-88.214 332.48-194.347 469.547l-168.64-130.667c82.667-106.773 134.933-232.853 151.253-364.8 3.734-30.72 5.547-61.76 5.547-93.546 0-31.894-1.813-62.934-5.547-93.867-5.866-46.613-16.106-93.013-30.72-137.813Zm-135.125-421.707 150.826 150.827-875.413 875.413-519.893-519.893 150.826-150.827 369.067 369.067 724.587-724.587ZM194.347 577.411l168.64 130.666c-82.667 106.774-134.934 232.854-151.254 364.8L0 1046.744c21.013-169.92 88.213-332.267 194.347-469.333ZM833.14 213.709l26.134 211.734c-132.054 16.213-258.134 68.586-364.8 151.253L363.7 408.056c137.067-106.133 299.307-173.44 469.44-194.347Zm239.456-.01c170.027 21.013 332.374 88.213 469.334 194.346l-130.774 168.64c-106.56-82.666-232.746-135.04-364.693-151.253Z" fill-rule="evenodd"/>
+                    </svg>
+                </header>
+                <div class="card-content-image-only">
+                    <img src="background/TBD.jpg" alt="Faster Functionality">
+                </div> 
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+        <header class="title-container">
+            <h1>What do our clients say?</h1>
+        </header>
+        <div class="descriptive-card-container">
+            <article class="descriptive-card">
+                <aside class="descriptive-card-add-on-side">
+                    <img src="users/Renzo.jpg" alt="Renzo Quispe Palomino">
+                </aside>
+                <main class="descriptive-card-main-side">
+                    <header class="descriptive-card-header background-primary-gradient">
+                        <h1>Renzo Quispe Palomino</h1>
+                    </header>
+                    <div class="descriptive-card-content">
+                        <p> Task Management helped me organize my team very efficiently </p>
+                    </div>
+                </main>
+            </article>
+
+            <article class="descriptive-card">
+                <aside class="descriptive-card-add-on-side">
+                    <img src="users/Cielo.jpg" alt="Cielo Ramirez Calderon">
+                </aside>
+                <main class="descriptive-card-main-side">
+                    <header class="descriptive-card-header background-primary-gradient">
+                        <h1>Cielo Rodriguez Calderon</h1>
+                    </header>
+                    <div class="descriptive-card-content">
+                        <p> Task Management helped my team and I to collaborate without any problems </p>
+                    </div>
+                </main>
+            </article>
+
+            <article class="descriptive-card">
+                <aside class="descriptive-card-add-on-side">
+                    <img src="users/Maria.jpg" alt="Maria Perez de la Cruz">
+                </aside>
+                <main class="descriptive-card-main-side">
+                    <header class="descriptive-card-header background-primary-gradient">
+                        <h1>Maria Perez de la Cruz</h1> 
+                    </header>
+                    <div class="descriptive-card-content">
+                        <p> Task Management helped me organize my homework and other school activites </p>
+                    </div>
+                </main>
+            </article>
+        </div>
+    </section>
+
+    <section class="container" aria-label="Services Container" id="services">
+        <header class="title-container">
+            <h1>Our Services</h1>
+        </header>
+        <div class="card-container">
+            <article class="card">
+                <header class="card-header">
+                    <h1>Proyect Management</h1>
+                </header>
+                <div class="card-content">
+                    <img src="background/service.jpg" alt="Proyect Management">
+                    <p>Optimize your projects with our online management tool. 
+                        Assign tasks, set deadlines, and track progress in real time, all 
+                        from an intuitive, easy-to-use interface.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Transparent Comunication</h1>
+                </header>
+                <div class="card-content">
+                    <img src="background/service2.jpg" alt="Transparent Comunication">
+                    <p> Our platform offers integrated tools for instant messaging, video 
+                        conferencing and file sharing, improving collaboration and reducing 
+                        the barriers of distance.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Performance Evaluation</h1>
+                </header>
+                <div class="card-content">
+                    <img src="background/service3.jpg" alt="Performance Evaluation">
+                    <p>Evaluate your team performance objectively and efficiently. Conduct regular assessments, 
+                        set goals, and track individual and team progress to foster a productive and motivating 
+                        work environment</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h1>Task Scheduling</h1>
+                </header>
+                <div class="card-content">
+                    <img src="background/service4.jpg" alt="Task scheduling">
+                    <p>For the students, Task Management implements a calendar where you can insert all of the homework
+                        you have to do for school.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="container" id="about-us" aria-label="About the Team Container">
+        <header class="title-container">
+            <h1>About Us</h1>
+        </header>
+        <div class="descriptive-card-container">
+            <article class="descriptive-card">
+                <main class="descriptive-card-main-side">
+                    <header class="descriptive-card-header background-primary-gradient">
+                        <h1>What is Task Management?</h1>
+                    </header>
+                    <div class="descriptive-card-content">
+                        <p>Task Management is a small business that focuses in creating software solutions for school and university 
+                            students and leaders and members of a teleworking team (remote work). Our goal is to help them achieve 
+                            adequate organization of their tasks and projects and, especially, meet their goals. Likewise, we follow 
+                            a mutual learning model with our clients, in order to progressively improve our quality of care and the 
+                            tools we offer them. In order to do this, we have designed an application called Task Management, 
+                            dedicated entirely to achieving the above</p>
+                    </div>
+                </main>
+            </article>
+            <article class="descriptive-card">
+                <main class="descriptive-card-main-side">
+                    <header class="descriptive-card-header background-primary-gradient">
+                        <h1>Mission</h1>
+                    </header>
+                    <div class="descriptive-card-content">
+                        <p>Our mission is to contribute to the management and organization of projects and tasks of school and university 
+                            students and leaders and members of teleworking teams to facilitate the work development process and, 
+                            consequently, increase its efficiency. We provide tools, resources and work environments for the management of 
+                            projects and tasks, with the purpose of enhancing the productivity of our users. As for teleworking teams, our 
+                            application also helps to encourage and strengthen collaboration and communication between team members to 
+                            ensure a good workflow. We are committed to ensuring a successful organization of every project tackled 
+                            using our application.</p>
+                    </div>
+                </main>
+            </article>
+            <article class="descriptive-card">
+                <main class="descriptive-card-main-side">
+                    <header class="descriptive-card-header background-primary-gradient">
+                        <h1>Vision</h1>
+                    </header>
+                    <div class="descriptive-card-content">
+                        <p>Our vision is to stand out as the leading platform that revolutionizes efficient project and task management 
+                            in the market. At Task Management, our purpose is to guarantee the efficiency of the organization. Therefore, 
+                            we train teams to achieve exceptional collaboration, boosting their productivity and improving their workflow. 
+                            We seek to obtain recognition as the provider of innovative and reliable solutions for school and university 
+                            students and leaders and members of teleworking teams throughout Lima</p>
+                    </div>
+                </main>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer-section background-primary-gradient" id="contact-us" aria-label="Contacts Footer">
+        <main class="footer-container">
+            <section class="footer-content">
+                <h4>Phone</h4>
+                <p>(+51) 999 888 777</p>
+            </section>
+            <section class="footer-content">
+                <h4>Email</h4>
+                <p>taskmanagement@gmail.com</p>
+            </section>
+            <section class="footer-content">
+                <h4>Location</h4>
+                <p>Jr. Bodegones 291, Santiago de Surco 15039</p>
+            </section>
+        </main>
+        <div class="copyright-footer">
+            <h3>&copy;Task Management </h3>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@import 'styles-colors.css';
+
+.footer-section{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-image: var(--primary-gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 4rem;
+}
+.footer-content{
+    text-align: center;
+}
+
+.copyright-footer{
+    border-top: 1px solid var(--border);
+    height: 100%;
+    width: 100%;
+}
+
+.copyright-footer>h3{
+    margin: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .footer-container{
+        padding: 0;
+        flex-direction: column;
+    }
+    .footer-content{
+        text-align: left;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .copyright-footer>h3{
+        margin: 1rem 0 1rem 1rem;
+    }
+}
