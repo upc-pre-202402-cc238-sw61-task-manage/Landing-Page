@@ -146,6 +146,11 @@ a:hover{
     .nav-item, .home-link, #home{
         display: none;
     }
+    
+    .navbar {
+        padding: none;
+        margin-top: -0.1rem;
+    }
 
     .sidebar{
         display: none;
